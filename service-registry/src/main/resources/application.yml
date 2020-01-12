@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  datacenter: Main
+  environment: prod
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:80/
+    registerWithEureka: false
+    fetchRegistry: false
